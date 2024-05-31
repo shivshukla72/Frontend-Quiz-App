@@ -1,0 +1,422 @@
+[
+    {
+      "courseName": "html",
+      "QNA": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            "HyperText Markup Language",
+            "Hyperlinks and Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyperlinking Text Module Language"
+          ],
+          "answer": "HyperText Markup Language"
+        },
+        {
+          "question": "Which HTML element is used to define the title of a document?",
+          "options": [
+            "<meta>",
+            "<title>",
+            "<head>",
+            "<header>"
+          ],
+          "answer": "<title>"
+        },
+        {
+          "question": "How do you create a hyperlink in HTML?",
+          "options": [
+            "<a href=\"url\">link text</a>",
+            "<link url=\"url\">link text</link>",
+            "<a url=\"url\">link text</a>",
+            "<href=\"url\">link text</href>"
+          ],
+          "answer": "<a href=\"url\">link text</a>"
+        },
+        {
+          "question": "Which tag is used to create a paragraph in HTML?",
+          "options": [
+            "<p>",
+            "<para>",
+            "<paragraph>",
+            "<pg>"
+          ],
+          "answer": "<p>"
+        },
+        {
+          "question": "Which attribute is used to provide a unique identifier for an HTML element?",
+          "options": [
+            "class",
+            "id",
+            "style",
+            "name"
+          ],
+          "answer": "id"
+        },
+        {
+          "question": "What is the correct HTML element for inserting a line break?",
+          "options": [
+            "<break>",
+            "<br>",
+            "<lb>",
+            "<linebreak>"
+          ],
+          "answer": "<br>"
+        },
+        {
+          "question": "How can you make a numbered list in HTML?",
+          "options": [
+            "<ul>",
+            "<ol>",
+            "<li>",
+            "<dl>"
+          ],
+          "answer": "<ol>"
+        },
+        {
+          "question": "Which tag is used to define an image in HTML?",
+          "options": [
+            "<img>",
+            "<image>",
+            "<pic>",
+            "<src>"
+          ],
+          "answer": "<img>"
+        },
+        {
+          "question": "What is the correct HTML element to define important text?",
+          "options": [
+            "<strong>",
+            "<important>",
+            "<b>",
+            "<i>"
+          ],
+          "answer": "<strong>"
+        },
+        {
+          "question": "Which HTML attribute is used to define inline styles?",
+          "options": [
+            "font",
+            "style",
+            "styles",
+            "class"
+          ],
+          "answer": "style"
+        }
+      ]
+    },
+    {
+      "courseName": "css",
+      "QNA": [
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            "Cascading Style Sheets",
+            "Colorful Style Sheets",
+            "Creative Style Sheets",
+            "Computer Style Sheets"
+          ],
+          "answer": "Cascading Style Sheets"
+        },
+        {
+          "question": "Which HTML attribute is used to define inline CSS styles?",
+          "options": [
+            "class",
+            "style",
+            "css",
+            "font"
+          ],
+          "answer": "style"
+        },
+        {
+          "question": "Which is the correct CSS syntax?",
+          "options": [
+            "body:color=black;",
+            "{body;color:black;}",
+            "body {color: black;}",
+            "{body:color=black;}"
+          ],
+          "answer": "body {color: black;}"
+        },
+        {
+          "question": "How do you add a background color for all <h1> elements?",
+          "options": [
+            "h1 {background-color: #FFFFFF;}",
+            "h1.all {background-color: #FFFFFF;}",
+            "h1.all {background-color: white;}",
+            "all.h1 {background-color: #FFFFFF;}"
+          ],
+          "answer": "h1 {background-color: #FFFFFF;}"
+        },
+        {
+          "question": "Which CSS property controls the text size?",
+          "options": [
+            "text-size",
+            "font-style",
+            "font-size",
+            "text-style"
+          ],
+          "answer": "font-size"
+        },
+        {
+          "question": "What is the correct syntax for referring to an external style sheet?",
+          "options": [
+            "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">",
+            "<stylesheet>mystyle.css</stylesheet>",
+            "<style src=\"mystyle.css\">",
+            "<link src=\"stylesheet\" href=\"mystyle.css\">"
+          ],
+          "answer": "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">"
+        },
+        {
+          "question": "How do you select an element with id 'demo'?",
+          "options": [
+            ".demo",
+            "demo",
+            "#demo",
+            "*demo"
+          ],
+          "answer": "#demo"
+        },
+        {
+          "question": "Which property is used to change the font of an element?",
+          "options": [
+            "font-family",
+            "font-weight",
+            "font-style",
+            "font-type"
+          ],
+          "answer": "font-family"
+        },
+        {
+          "question": "How do you make each word in a text start with a capital letter?",
+          "options": [
+            "text-transform:capitalize",
+            "text-transform:uppercase",
+            "text-transform:lowercase",
+            "text-transform:initial"
+          ],
+          "answer": "text-transform:capitalize"
+        },
+        {
+          "question": "How do you make a list that lists its items with squares?",
+          "options": [
+            "list-style-type: square;",
+            "list-type: square;",
+            "type: square;",
+            "list: square;"
+          ],
+          "answer": "list-style-type: square;"
+        }
+      ]
+    },
+    {
+      "courseName": "js",
+      "QNA": [
+        {
+          "question": "What does 'var' stand for in JavaScript?",
+          "options": [
+            "Variable",
+            "Variation",
+            "Variety",
+            "Variant"
+          ],
+          "answer": "Variable"
+        },
+        {
+          "question": "Which company developed JavaScript?",
+          "options": [
+            "Microsoft",
+            "Netscape",
+            "Google",
+            "Apple"
+          ],
+          "answer": "Netscape"
+        },
+        {
+          "question": "Which symbol is used for comments in JavaScript?",
+          "options": [
+            "//",
+            "/* */",
+            "#",
+            "<!-- -->"
+          ],
+          "answer": "//"
+        },
+        {
+          "question": "How do you create a function in JavaScript?",
+          "options": [
+            "function = myFunction()",
+            "function myFunction()",
+            "create myFunction()",
+            "def myFunction()"
+          ],
+          "answer": "function myFunction()"
+        },
+        {
+          "question": "How do you call a function named 'myFunction'?",
+          "options": [
+            "call myFunction()",
+            "myFunction()",
+            "call function myFunction()",
+            "execute myFunction()"
+          ],
+          "answer": "myFunction()"
+        },
+        {
+          "question": "How can you add a comment in JavaScript?",
+          "options": [
+            "// This is a comment",
+            "' This is a comment",
+            "/* This is a comment */",
+            "<!-- This is a comment -->"
+          ],
+          "answer": "// This is a comment"
+        },
+        {
+          "question": "Which event occurs when the user clicks on an HTML element?",
+          "options": [
+            "onchange",
+            "onmouseclick",
+            "onmouseover",
+            "onclick"
+          ],
+          "answer": "onclick"
+        },
+        {
+          "question": "How do you declare a JavaScript variable?",
+          "options": [
+            "var myVariable;",
+            "variable myVariable;",
+            "v myVariable;",
+            "var: myVariable;"
+          ],
+          "answer": "var myVariable;"
+        },
+        {
+          "question": "Which operator is used to assign a value to a variable?",
+          "options": [
+            "-",
+            "*",
+            "=",
+            "+"
+          ],
+          "answer": "="
+        },
+        {
+          "question": "What will the following code return: Boolean(10 > 9)?",
+          "options": [
+            "true",
+            "false",
+            "NaN",
+            "undefined"
+          ],
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "courseName": "accessibility",
+      "QNA": [
+        {
+          "question": "What does WCAG stand for?",
+          "options": [
+            "Web Content Accessibility Guidelines",
+            "Web Coding Accessibility Guide",
+            "World Content Accessibility Guide",
+            "Web Compliance and Accessibility Guidelines"
+          ],
+          "answer": "Web Content Accessibility Guidelines"
+        },
+        {
+          "question": "Which of the following is NOT a principle of WCAG 2.1?",
+          "options": [
+            "Perceivable",
+            "Operable",
+            "Understandable",
+            "Maintainable"
+          ],
+          "answer": "Maintainable"
+        },
+        {
+          "question": "What is the purpose of the alt attribute in an image tag?",
+          "options": [
+            "To display a tooltip on hover",
+            "To provide a clickable link",
+            "To describe the image for screen readers",
+            "To change the image size"
+          ],
+          "answer": "To describe the image for screen readers"
+        },
+        {
+          "question": "Which HTML element is used to define keyboard input?",
+          "options": [
+            "<kbd>",
+            "<input>",
+            "<key>",
+            "<button>"
+          ],
+          "answer": "<kbd>"
+        },
+        {
+          "question": "What does ARIA stand for?",
+          "options": [
+            "Accessible Rich Internet Applications",
+            "Advanced Rich Internet Applications",
+            "Accessible Resource Internet Applications",
+            "Advanced Resource Internet Applications"
+          ],
+          "answer": "Accessible Rich Internet Applications"
+        },
+        {
+          "question": "What does the 'lang' attribute specify?",
+          "options": [
+            "The programming language of the document",
+            "The natural language of the document",
+            "The language for screen readers",
+            "The language for CSS"
+          ],
+          "answer": "The natural language of the document"
+        },
+        {
+          "question": "Which ARIA attribute is used to describe the current state of an interactive element?",
+          "options": [
+            "aria-label",
+            "aria-role",
+            "aria-current",
+            "aria-live"
+          ],
+          "answer": "aria-current"
+        },
+        {
+          "question": "What is the main purpose of using semantic HTML tags?",
+          "options": [
+            "To enhance the styling of the webpage",
+            "To improve accessibility and SEO",
+            "To include JavaScript functionality",
+            "To reduce the file size"
+          ],
+          "answer": "To improve accessibility and SEO"
+        },
+        {
+          "question": "Which of the following is a good practice for creating accessible forms?",
+          "options": [
+            "Using placeholder text instead of labels",
+            "Using labels for all form elements",
+            "Using long instructions within the input fields",
+            "Relying on color alone to indicate required fields"
+          ],
+          "answer": "Using labels for all form elements"
+        },
+        {
+          "question": "Which of these tools can be used to check the accessibility of a website?",
+          "options": [
+            "Lighthouse",
+            "Google Analytics",
+            "PageSpeed Insights",
+            "SEO Checker"
+          ],
+          "answer": "Lighthouse"
+        }
+      ]
+    }
+  ]
