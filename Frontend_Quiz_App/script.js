@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded',function() {
+	// Change the theme of page
 	themeToggle = document.getElementById('ud-qp__theme--toggle');
 	themeToggle.addEventListener('click',(e)=> {
 			if(!e.target.checked) {
@@ -8,8 +9,8 @@ document.addEventListener('DOMContentLoaded',function() {
 			}
 	});
 	
+	// Fetch data from the json file.
 	let courseData;
-
 	function fetchQNA() {
 		fetch('./data.json')
 			.then((response)=> {
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded',function() {
 	let nextBtn;
 	let courseContainer = document.querySelector('.ud-qp__container');
 	let renderFirstQue = (courseQue,courseQueOptions)=> {
+		let que = courseQue[0];
 		document.querySelector('.ud-qp__course-name').innerText = courseName;
 		let optionsHtml = "";
 		courseQueOptions[0].forEach((option, index)=> {
@@ -73,15 +75,13 @@ document.addEventListener('DOMContentLoaded',function() {
 			</div>`;
 		})
 
-		
-
 		let firstQue = `<div class='ud-qp__test-panel'>
 			<div class='ud-qp__test-panel-wrap flex flex-wrap gap-5'>
 					<div class='flex-[0_0_100%] md:flex-[0_0_calc(60%_-_10px)]'>
 							<span class='italic block mb-5 text-base'>
 									Question 1 of ${courseQue.length}
 							</span>
-							<h2 class='text-2xl font-semibold max-w-[500px] mb-11'>${courseQue[0]}</h2>
+							<h2 class='ud-qp__course-que text-2xl font-semibold max-w-[500px] mb-11'></h2>
 					</div>
 					<div class='ud-qp__que-option-container flex-[0_0_100%] md:flex-[0_0_calc(40%_-_10px)]'>
 						${optionsHtml}
@@ -94,6 +94,8 @@ document.addEventListener('DOMContentLoaded',function() {
 
 		courseContainer.insertAdjacentHTML('beforeend',firstQue);
 
+		// Add Question
+		document.querySelector('.ud-qp__course-que').textContent = que;
 		// Add options here avoid the tag conflict, if tag comes on the option.
 		courseQueOptions[queIndex].forEach((option, index) => {
 			let optionElement = document.querySelector(`[data-course='option-${index}'] .ud-qp__que-option`);
@@ -108,6 +110,7 @@ document.addEventListener('DOMContentLoaded',function() {
 	}
 
 	let renderNextQue = (courseQue,courseQueOptions,queIndex)=> {
+		let que = courseQue[queIndex];
 		let optionsHtml = "";
 		courseQueOptions[queIndex].forEach((option, index)=> {
 			let letter = String.fromCharCode(65 + index);
@@ -127,7 +130,7 @@ document.addEventListener('DOMContentLoaded',function() {
 							<span class='italic block mb-5 text-base'>
 									Question ${queIndex + 1} of ${courseQue.length}
 							</span>
-							<h2 class='text-2xl font-semibold max-w-[500px] mb-11'>${courseQue[queIndex]}</h2>
+							<h2 class='ud-qp__course-que text-2xl font-semibold max-w-[500px] mb-11'></h2>
 							
 					</div>
 					<div class='ud-qp__que-option-container flex-[0_0_100%] md:flex-[0_0_calc(40%_-_10px)]'>
@@ -140,6 +143,9 @@ document.addEventListener('DOMContentLoaded',function() {
 
 		document.querySelector('.ud-qp__test-panel-wrap').remove();
 		courseContainer.insertAdjacentHTML('beforeend',nextQue);
+
+		// Add Que with textContent to consider html tag in question as string.
+		document.querySelector('.ud-qp__course-que').textContent = que;
 		// Add options here avoid the tag conflict, if tag comes on the option.
 		courseQueOptions[queIndex].forEach((option, index) => {
 			let optionElement = document.querySelector(`[data-course='option-${index}'] .ud-qp__que-option`);
@@ -184,15 +190,22 @@ document.addEventListener('DOMContentLoaded',function() {
 
 	let showResult = (score,courseName)=> {
 		let resultHTML = `<div class="ud-qp__result text-center max-w-[550px] mx-auto">
-		<h1 class="ud-qp__result-title text-5xl py-10 mb-3">${ score > 5 ? 'Congrats! you have passed the Test' : 'Sorry! you have not passed the Test' }</h1>
+		<h1 class="ud-qp__result-title text-5xl py-10 mb-3">${ score > 4 ? 'Congrats! you have passed the Test' : 'Sorry! you have not passed the Test' }</h1>
 			<span class="text-lg">You have scored ${score} in ${courseName}.</span>
-		</div>`
+		</div>
+		<div class='mt-8'>
+				<button class='ud-qp__course-restart-btn block text-xl font-semibold p-4 rounded-xl text-center text-white bg-[#AC6FF6] mx-auto min-w[150px]'>Restart</button>
+		</div>
+		`
 		document.querySelector('.ud-qp__test-panel-wrap').remove();
 		courseContainer.insertAdjacentHTML('beforeEnd',resultHTML);
+		let restartBtn = document.querySelector('.ud-qp__course-restart-btn');
+		restartBtn.addEventListener('click',()=> {
+			location.reload();
+		})
 	}
 
 	let checkScoreAndUpdateQue = (nextBtn,ansArr)=> {
-
 		nextBtn.addEventListener('click',(e)=> {
 			let optionContainer = document.querySelector('.ud-qp__que-option-container');
 			let optionSelected = optionContainer.querySelector('.option--locked');
@@ -218,4 +231,6 @@ document.addEventListener('DOMContentLoaded',function() {
 			}
 		})
 	}
+
+
 })
